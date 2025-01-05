@@ -5,9 +5,9 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "build:deploy": "astro build && wrangler pages deploy dist",
     "preview": "wrangler pages dev ./dist",
-    "astro": "astro",
-    "deploy": "astro build && wrangler pages deploy dist"
+    "astro": "astro"
   },
   "dependencies": {
     "@astrojs/react": "^4.1.2",
